@@ -1,0 +1,57 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# C extensions and build artifacts
+*.so
+*.dll
+*.lib
+*.a
+*.o
+*.obj
+
+# cx_Freeze build output
+build/
+dist/
+*.manifest
+*.spec
+
+# Distribution packaging
+*.egg-info/
+*.deb
+*.rpm
+*.tar.gz
+*.whl
+
+# Virtual environments
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Optional: ignore your own frozen .exe if placed in root
+*.exe
