@@ -4,14 +4,12 @@ import numpy as np
 
 class Buttons:
     def __init__(self):
-        # Font
         self.font = cv2.FONT_HERSHEY_PLAIN
         self.text_scale = 3
         self.text_thick = 3
         self.x_margin = 20
         self.y_margin = 10
 
-        # Buttons
         self.buttons = {}
         self.button_index = 0
         self.buttons_area = []
@@ -27,7 +25,7 @@ class Buttons:
 
 
     def add_button(self, text, x, y):
-        # Get text size
+        
         textsize = cv2.getTextSize(text, self.font, self.text_scale, self.text_thick)[0]
         right_x = x + (self.x_margin * 2) + textsize[0]
         bottom_y = y + (self.y_margin * 2) + textsize[1]
@@ -50,7 +48,7 @@ class Buttons:
                 text_color = (0, 0, 200)
                 thickness = 3
 
-            # Get  text size
+            
             cv2.rectangle(frame, (x, y), (right_x, bottom_y),
                           button_color, thickness)
             cv2.putText(frame, button_text, (x + self.x_margin, bottom_y - self.y_margin),
