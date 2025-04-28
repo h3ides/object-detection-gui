@@ -26,3 +26,16 @@ If you prefer to run the project from source instead of the installer, make sure
    ```bash
    pip install -r requirements.txt
    ```
+
+###Build
+
+ python setup.py build
+
+###Windows installer
+
+Use bdist_msi for an installer: If you’re planning to distribute the software, you could create an installer instead of just a raw .exe. You can do this by running:
+
+python setup.py bdist_msi
+
+
+This would generate an installer
